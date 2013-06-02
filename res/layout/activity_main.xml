@@ -1,0 +1,155 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout 
+	    android:weightSum="1"
+	    android:orientation="vertical"
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+	    tools:context=".MainActivity" >
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/textView2"
+	        android:layout_weight="0.67"
+	        android:background="#FFFFFF"
+	        android:gravity="center"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.33"
+	        android:background="#FFFFFF"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	</LinearLayout>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+
+	    <TextView
+	        android:id="@+id/textViewStimuli"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:text="+"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:visibility="invisible" />
+
+	    <ImageView
+	        android:id="@+id/instructionsImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/welcomeImage"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/kidinstructions"
+	        android:visibility="invisible" />
+
+	    <ImageView
+	        android:id="@+id/practiceImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/instructionsImage"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/kidpractice"
+	        android:visibility="invisible" />
+
+	    <ImageView
+	        android:id="@+id/welcomeImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/textViewStimuli"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/kidwelcome" />
+
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/button3"
+	        android:layout_alignBottom="@+id/button3"
+	        android:layout_alignLeft="@+id/instructionsImage"
+	        android:minHeight="64dip"
+	        android:text="1"
+	        android:visibility="invisible" />
+
+	    <Button
+	        android:id="@+id/button2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/button1"
+	        android:layout_alignBottom="@+id/button1"
+	        android:layout_alignLeft="@+id/nextButton"
+	        android:minHeight="64dip"
+	        android:text="2"
+	        android:visibility="invisible" />
+
+	    <Button
+	        android:id="@+id/button3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignRight="@+id/instructionsImage"
+	        android:layout_marginBottom="18dp"
+	        android:minHeight="64dip"
+	        android:text="3"
+	        android:visibility="invisible" />
+
+	    <ImageView
+	        android:id="@+id/playImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/instructionsImage"
+	        android:layout_below="@+id/instructionsImage"
+	        android:src="@drawable/kidplay"
+	        android:visibility="invisible" />
+
+	    <ImageView
+	        android:id="@+id/greatJobImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/textViewStimuli"
+	        android:layout_alignLeft="@+id/welcomeImage"
+	        android:src="@drawable/kidgreatjob"
+	        android:visibility="invisible" />
+
+	    <Button
+	        android:id="@+id/nextButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/button2"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center_horizontal"
+	        android:text="Next"
+	        android:visibility="invisible" />
+
+	    <ImageView
+	        android:id="@+id/instructionsTextImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/playImage"
+	        android:layout_below="@+id/textViewStimuli"
+	        android:src="@drawable/kindinstructionstext"
+	        android:visibility="invisible" />
+
+	    <ImageView
+	        android:id="@+id/readyTextImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/button3"
+	        android:layout_below="@+id/textViewStimuli"
+	        android:src="@drawable/kidreadytext"
+	        android:visibility="invisible" />
+
+	</RelativeLayout>
+
+</FrameLayout>
